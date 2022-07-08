@@ -1,0 +1,185 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    border: solid #2C3639;
+    border-width:20px;
+    box-sizing: border-box;
+   }
+  
+#h2{
+    font-size: 500%;
+    color:darks;
+    font-family:Cambria,Cochin;
+    text-align: center;
+}
+#h2:hover {
+    color: antiquewhite;
+    background-image:url("https://images.unsplash.com/photo-1490740626331-710ee10f5b58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fG9yZWdhbiUyMGZvcmVzdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60")
+    
+}
+
+#p1{
+    font-size: 170% ;
+    color: #EAAE13;
+    text-align: center;
+    font-family:Cambria,Cochin;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+h3{
+    color:goldenrod;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    font-size: 270%;
+    font-family:Cambria,Cochin;
+
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    vertical-align: middle;
+    margin-left: 0px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+   
+}
+#row{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-family:Cambria,Cochin;
+    color: #2D544D;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.buttonClass{
+    font-size: 40px;
+    background-color:darkslategray;
+    font-family:Cambria,Cochin;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.buttonClass:hover {background-color:goldenrod}
+
+.buttonClass:active {
+    background-color:goldenrod;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.container{
+    margin-top: 10px;
+}
+.main{
+    font-size: 40px;
+    color:#2D544D
+}
+.main:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .main:hover {background-color:goldenrod}
+
+  #submit{
+    font-size: 30px;
+    font-family:Cambria,Cochin;
+    color: #2C3639;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#lotrButton{
+ font-size: 50px; 
+ font-family: Cambria,Cochin;
+  color: white;
+   margin-left: 0%; 
+   background-color:darkslategrey;
+   text-align: center;
+   cursor: pointer;
+   outline: none;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+}
+#lotrButton:hover {background-color:goldenrod}
+
+#list{
+    color: #2D544D;
+    margin-bottom: 2em;
+    margin-left: 40px;
+    font-size: 200%;
+    font-family:Cambria,Cochin;
+}
+* {
+    box-sizing: border-box;
+    
+}
+.mySlides {
+    display: none;
+    image-resolution: 300dpi;
+   
+}
+img[src*="png"] {
+    width: 2805px;
+    height: 700px;
+    margin-top: 100px;
+    
+  }
+
+.slideshow-container {
+  width: 1500px;
+  height: 600px; 
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 4}
+}
+
+
+
+
+
+
+
+ 
+
+  
+
+  
