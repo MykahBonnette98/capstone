@@ -1,4 +1,43 @@
-module.exports = {
+require('dotenv').config()
+const {CONNECTION_STRING} = process.env
+const Sequelize = require('sequelize')
+
+const sequelize = new Sequelize(CONNECTION_STRING, {
+    dialect: 'postgres', 
+    dialectOptions: {
+        ssl: {
+            rejectUnauthorized: false
+        }
+    }
+})
+ const userId = []
+
+ module.exports = {
+    getUserInfo: (req, res) => {
+        sequelize.query(`select * from users
+             on user_id = user_id
+            where user_id = ${userId};`)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+        .catch(err => console.log(err))
+    },
+    updateUserInfo: (req, res) => {
+        let {
+            firstName,
+            lastName,
+            email,
+        } = req.body
+
+        sequelize.query(
+            `UPDATE users SET
+               first_name = '${firstName}', 
+               last_name = '${lastName}', 
+               email = '${email}', 
+            WHERE user_id = ${userId};`)
+             
+            .then(() => res.sendStatus(200))
+            .catch(err => console.log(err))
+},
+
 
     getLotr: (req, res) => {
         const lotr = ["Boromir! (The Protector)", 
@@ -16,3 +55,4 @@ module.exports = {
         res.status(200).send(randomLotr);
     }
 }
+
