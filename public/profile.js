@@ -12,7 +12,7 @@ inputs.forEach(input => {
     })
 })
 
-function getUserInfo() {
+function getProfileInfo() {
     axios.get('http://localhost:4000/user') 
         .then(res => {
             const user = res.data[0]
@@ -28,9 +28,20 @@ function getUserInfo() {
             emailInput.value = email
         })
 }
+
+function updateInfo() {
+    let body = {
+        firstName: firstNameInput.value, 
+        lastName: lastNameInput.value, 
+        email: emailInput.value, 
+    }
+
+    axios.put('http://localhost:4000/user', body)
+        .then(res => console.log(1, res))
+        .catch(err => console.log(err))
+}
 profileForm.addEventListener('submit', (e) => {
     e.preventDefault()
 })
 
-
-getUserInfo()
+getProfileInfo()

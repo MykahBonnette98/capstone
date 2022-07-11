@@ -10,7 +10,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
         }
     }
 })
- const userId = []
+ const userId = ''
 
  module.exports = {
     getUserInfo: (req, res) => {

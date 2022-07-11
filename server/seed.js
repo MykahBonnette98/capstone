@@ -21,6 +21,9 @@ module.exports = {
             last_name varchar(100), 
             email varchar(50), 
         );
+        insert into users (first_name, last_name, email,)
+        values()
+
         `).then(() => {
             console.log('DB seeded!')
             res.sendStatus(200)

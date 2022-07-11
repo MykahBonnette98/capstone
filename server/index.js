@@ -1,8 +1,8 @@
-const express = require("express");
-const cors = require("cors");
+const express = require("express")
+const cors = require("cors")
 const {SERVER_PORT} = process.env
-const {seed} = require('./seed.js')
-const app = express();
+const { seed } = require('./seed.js')
+const app = express()
 
 app.use(cors());
 app.use(express.json())
@@ -26,6 +26,12 @@ var rollbar = new Rollbar({
 });
 
 rollbar.log("Hello world!");
+rollbar.log("Hello world!");
+rollbar.info('Requested info');
+rollbar.error('Error');
+rollbar.critical('Critial');
+rollbar.warning('Warning');
 
+app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
 const port = process.env.PORT || 4000
 app.listen(port, () => console.log(`Server listening on ${port}`))
