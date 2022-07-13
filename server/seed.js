@@ -1,18 +1,8 @@
-require('dotenv').config()
-const {CONNECTION_STRING} = process.env
-const Sequelize = require('sequelize')
-
-const sequelize = new Sequelize(CONNECTION_STRING, {
-    dialect: 'postgres', 
-    dialectOptions: {
-        ssl: {
-            rejectUnauthorized: false
-        }
-    }
-})
 module.exports = {
-    seed: (req, res) => {
-        sequelize.query(`
+  seed: (req, res) => {
+    sequelize
+      .query(
+        `
         drop table if exists users;
 
         create table users (
@@ -21,12 +11,14 @@ module.exports = {
             last_name varchar(100), 
             email varchar(50), 
         );
-        insert into users (first_name, last_name, email,)
-        values()
-
-        `).then(() => {
-            console.log('DB seeded!')
-            res.sendStatus(200)
-        }).catch(err => console.log('error seeding DB', err))
-    }
-}
+        insert into users (first_name, last_name, email)
+        values(1, first name, last name, email)
+        `
+      )
+      .then(() => {
+        console.log("DB seeded!");
+        res.sendStatus(200);
+      })
+      .catch((err) => console.log("error seeding DB", err));
+  },
+};

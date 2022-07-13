@@ -1,147 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOTR</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="imgSheet" href="screenshots">
-    </head>
-    
-    <body >  
-      <a style="color: goldenrod; font-size: 40px;" href="profile.html"> Create A Profile</a>
-        <div class="container">
-            <div class="main">
-            <form id="form_id" method="post" name="myform">
-            <label>User Name :</label>
-            <input type="text" name="username" id="username"/>
-            <label>Password :</label>
-            <input type="password" name="password" id="password"/>
-            <input type="button" value="Login" id="submit" onclick="validate()"/>
-            </form>
-            </div>
-            </div>
-        <h2 id="h2">Lord of The Rings Travel WishList</h2>
-            <p style="background-color:dimgrey;color:white;padding:20px;"id="p1">The Lord of the Rings trilogy was filmed all around New Zealand. Over 150 real-world locations were used for key scenes, including Mordor, Hobbiton, Rivendell and more.</p>
-        </div>
-        <div>
-    <h3 >ADD WISHLIST DESTINATIONS</h3>
-        </div>
-
-        <div id="list" >
-         <input type="text" id="candidate" />
-        <button onclick="addItem()" class="buttonClass">
-        Add </button>
-        <button onclick="removeItem()" class="buttonClass">
-        Remove</button>
-        </div>
-<div>
-        <button id="lotrButton">What LOTR character do you resemble?</button>
-</div>
-        <ul >
-    <div id="row">
-        <br>
-     <li ><img src="https://images.unsplash.com/photo-1484898638214-51b26e73efe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="im1" >Tongariro National Park</li>
-    <li ><img src="https://images.unsplash.com/photo-1511813246609-8057aed99883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bG90cnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="im3" >Hobbiton – Matamata</li>
-     <li ><img src="https://images.unsplash.com/photo-1646974708582-3dced57e0a25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="im4"> Putangirua Pinnacles</li>
-    <li ><img src="https://images.unsplash.com/photo-1442483221814-59f7d8b22739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="im5" >Woods in Wellington</li>
-    <li ><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hldHdvb2QlMjBmb3Jlc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="im6" >Chetwood Forest</li>
-    </ul>
-        </div>
-          
-        <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-            
-            </div>
-            <div id="footer" class="slideshow-container">
-
-                <div class="mySlides fade">
-                  <img src="screenshots/img1.png">
-                </div>
-                
-                <div class="mySlides fade">
-    
-                  <img src="screenshots/img2.png" >
-               
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="screenshots/img3.png" >
-                  </div>
-
-                <div class="mySlides fade">
-                    <img src="screenshots/img4.png" >
-                    </div>
-
-                  <div class="mySlides fade">
-                    <img src="screenshots/img5.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img6.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img7.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img8.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img9.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img10.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img11.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img12.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img13.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img14.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img15.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img16.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img17.png" >
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="screenshots/img18.png" >
-                  </div>
-                 
-                </div>
-                
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                  <span class="dot" onclick="currentSlide(4)"></span> 
-                  <span class="dot" onclick="currentSlide(5)"></span> 
-                   <span class="dot" onclick="currentSlide(6)"></span> 
-                   <span class="dot" onclick="currentSlide(7)"></span> 
-                   <span class="dot" onclick="currentSlide(8)"></span> 
-                   <span class="dot" onclick="currentSlide(9)"></span> 
-                   <span class="dot" onclick="currentSlide(11)"></span>
-                   <span class="dot" onclick="currentSlide(12)"></span>
-                   <span class="dot" onclick="currentSlide(13)"></span>
-                   <span class="dot" onclick="currentSlide(14)"></span>
-                   <span class="dot" onclick="currentSlide(15)"></span>
-                   <span class="dot" onclick="currentSlide(16)"></span>
-                   <span class="dot" onclick="currentSlide(17)"></span>
-                   <span class="dot" onclick="currentSlide(18)"></span>
-                </div>
-
-   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>                              
-    <script src="index.js"></script>
- 
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LOTR</title>
+      <link rel="stylesheet" href="index.css">
+      <link rel="imgSheet" href="screenshots">
+      <style>
+         .parallax {
+         background-image: url("https://images.unsplash.com/photo-1535666669445-e8c15cd2e7d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG5ldyUyMHplbGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60");
+         min-height: 500px; 
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+      </style>
+   </head>
+   <body class="parallax">
+      <a style="color: #fff; font-size: 40px; text-decoration: none;" href="profile.html"> Create A Profile</a>
+      <div>
+      <div id="main">
+         <div class="login">
+            <label style="font-size: 40px;">Enter User Name :</label>
+            <input type="text" placeholder="Enter user name" id="username" /></label>
+            <label style="font-size: 40px;">Enter Password :</label>
+            <label><input type="password" placeholder="Enter Password" id="pwd1"/></label>
+            <input type="submit" value="Login" class="btn" onClick="login()" /></label>
+         </div>
+      </div>
+      <div>
+         <h2>Lord of The Rings Travel WishList</h2>
+         <p id="p1">The Lord of the Rings trilogy was filmed all around New Zealand. Over 150 real-world locations were used for key scenes, including Mordor, Hobbiton, Rivendell and more.</p>
+      </div>
+      <div>
+         <button class="parallax2" id="lotrButton">What LOTR character are you alike?</button>
+      </div>
+      <div class="parallax3">
+         <h3 id="h3">ADD WISHLIST DESTINATIONS</h3>
+         <div id="myDIV" class="header">
+            <input type="text" id="myInput" placeholder="Add Destinations...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+         </div>
+         <ul id="myUL">
+            <li>Hobbiton</li>
+            <li class="checked">Tongariro National Park</li>
+            <li>Mt. Ngauruhoe</li>
+            <li>Tawhai Falls</li>
+            <li>Mavora Lakes Park</li>
+            <li>Skippers Canyon</li>
+            <li>Fiordland National Park</li>
+            <li>Kepler Track</li>
+            <li>Snowdon Forest</li>
+            <li>Putangirua Pinnacles</li>
+            <li>Mount Sunday</li>
+         </ul>
+         <di id="row">
+         <h4>Filming Locations Gallery</h4>
+         <img src="https://images.unsplash.com/photo-1484898638214-51b26e73efe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="im1">
+         <img src="https://images.unsplash.com/photo-1511813246609-8057aed99883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bG90cnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="im2">
+         <img src="https://images.unsplash.com/photo-1646974708582-3dced57e0a25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="im3">
+         <img src="https://images.unsplash.com/photo-1442483221814-59f7d8b22739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="im4">
+         <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hldHdvb2QlMjBmb3Jlc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="im5">
+         <img src="https://images.unsplash.com/photo-1578142914686-32006baa0694?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bG90cnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="im6">
+         <img src="https://images.unsplash.com/photo-1563024698-249269c80dcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxvdHJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="im7">
+         <img src="https://images.unsplash.com/photo-1515385771584-31e2edde0b84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxODY2MjEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="im8">
+      </div>
+      <div>
+      <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+      </div>
+      <div id="footer" class="slideshow-container">
+         <div class="mySlides fade">
+            <img src="screenshots/img1.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img2.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img3.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img4.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img5.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img6.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img7.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img8.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img9.png"alt="Image Not Found" >
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img10.png"alt="Image Not Found" >
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img11.png"alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img12.png"alt="Image Not Found" >
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img13.png"alt="Image Not Found" >
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img14.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img15.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img16.png"alt="Image Not Found" >
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img17.png" alt="Image Not Found">
+         </div>
+         <div class="mySlides fade">
+            <img src="screenshots/img18.png"alt="Image Not Found" >
+         </div>
+      </div>
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span> 
+         <span class="dot" onclick="currentSlide(4)"></span> 
+         <span class="dot" onclick="currentSlide(5)"></span> 
+         <span class="dot" onclick="currentSlide(6)"></span> 
+         <span class="dot" onclick="currentSlide(7)"></span> 
+         <span class="dot" onclick="currentSlide(8)"></span> 
+         <span class="dot" onclick="currentSlide(9)"></span> 
+         <span class="dot" onclick="currentSlide(11)"></span>
+         <span class="dot" onclick="currentSlide(12)"></span>
+         <span class="dot" onclick="currentSlide(13)"></span>
+         <span class="dot" onclick="currentSlide(14)"></span>
+         <span class="dot" onclick="currentSlide(15)"></span>
+         <span class="dot" onclick="currentSlide(16)"></span>
+         <span class="dot" onclick="currentSlide(17)"></span>
+         <span class="dot" onclick="currentSlide(18)"></span>
+      </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>                              
+      <script src="index.js"></script>
+   </body>
 </html>

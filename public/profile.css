@@ -1,62 +1,67 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body,
+html {
+  background-image: url(https://images.unsplash.com/photo-1493691816480-3f932e8c5f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG90cnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 h1 {
-    color:black;
+  color: #fff;
+  font-size: 50px;
 }
 
-h2, h3, p, a {
-    margin-left: 3%;
-}
-
+h2,
+h3,
+p,
 a {
-    text-decoration: none;
-    color:black;
-    font-size: 30px;
+  color: #fff;
+  padding: 20px;
+  font-family: Cambria, Cochin;
 }
-
-a:hover {
-    color:goldenrod;
+a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
 }
 
 main {
-    position: relative;
+  position: relative;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
-
 form > button {
-    padding: 0 10px;
+  padding: 0 20px;
+  font-family: Cambria, Cochin;
 }
 
 #profile-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 600px;
-    margin-left: 30px;
-    font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 600px;
+  margin-left: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-family: Cambria, Cochin;
 }
 
 #profile-form > input {
-    margin-bottom: 15px;
-    font-size: 25px;
+  margin-bottom: 15px;
+  width: 500px;
 }
 
 #profile-form > button {
-    background-color: goldenrod;
-    border: none;
-    color: white;
-    padding: 5px;
-    font-size: 20px;
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 9px;
+  font-size: 25px;
+  font-family: Cambria, Cochin;
+  cursor: pointer;
 }
