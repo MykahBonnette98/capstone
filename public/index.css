@@ -2,7 +2,7 @@
   font-size:60%;
   color: #fff;
   background-size: auto;
-  margin-left: 40%;
+  margin-left: 55%;
   margin-top: -2%;
   
 }
@@ -33,7 +33,7 @@ h2{
     color: #fff;
     text-align: center;
     background-color: rgba(0,0,0,.5);
-    margin-left: 25%;
+    margin-left: 30%;
     margin-top: 400px;
     height: 300px;
     width: 1000px;
@@ -43,7 +43,7 @@ h2{
     font-size: 300% ;
     text-align: center;
     color: #fff;
-    margin-left: 30%;
+    margin-left: 34%;
     font-family:Cambria,Cochin;
     text-align: center;
     height: 300px;
@@ -58,6 +58,7 @@ h2{
   text-align: center;
   cursor: pointer;
   margin-top: 300px;
+  border: none;
  }
 .button:active {
   background-color: #3e8e41(0,0,0,.5);
@@ -111,11 +112,11 @@ h3{
   background-size: cover;
 }
 img{
-    width: 450px;
-    height: 320px;
+    width: 550px;
+    height:400px;
     margin-top: 8%; 
     padding: 0px;
-    margin-left: 1%;
+    margin-left: 4%;
 }
 h4{
   font-size: 80px;
@@ -134,6 +135,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 80%;
+  margin-left: 4%;
 }
 
 ul li {
@@ -146,7 +148,7 @@ ul li {
   transition: 0.2s;
   width: 60%;
   
-  /* make the list items unselectable */
+
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -201,6 +203,7 @@ ul li.checked::before {
   width: 34%;
   color: white;
   text-align: center;
+  margin-left: 4%;
 }
 .header:after {
   content: "";
@@ -239,7 +242,8 @@ ul li.checked::before {
 img[src*="png"] {
     width: 100%;
     height: 700px;
-    margin-top: 90%;  
+    margin-top: 80%;  
+    margin-left: 1%;
 }
 .fade {
   animation-name: fade;
